@@ -2,7 +2,8 @@ var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
 const axios = require('axios')
-const token="483816962:AAELmfMG9kOWRhN83XRtHI9LeFdkadlo6aE"
+const token=require('./token.js').token
+
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
